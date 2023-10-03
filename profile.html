@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivani's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333333;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: transparent;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            list-style: none; /* Remove bullet points */
+            text-align: center; /* Center-align text within the cards */
+        }
+
+        .profile-image-container {
+            text-align: center;
+        }
+
+        .profile-image {
+            max-width: 160px;
+            border-radius: 70%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Add the glowing effect here */
+        }
+
+        .profile-details h3 {
+            margin: 0;
+            color: #F5F5F5;
+        }
+
+        /* Different background colors for cards */
+        .skills {
+            background-color: #ff5733; /* Red */
+            color: #F5F5F5; /* White text */
+        }
+
+        .professional-skills {
+            background-color: #ffff33; /* Yellow */
+            color: #000; /* Black text */
+        }
+
+        .certifications {
+            background-color: #33ff77; /* Green */
+            color: #fff; /* White text */
+        }
+
+        .summary {
+            background-color: #ffb6c1; /* Pastel Pink */
+            color: #333; /* Dark gray text */
+        }
+
+        .education {
+            background-color: #add8e6; /* Pastel Blue */
+            color: #333; /* Dark gray text */
+        }
+
+        .projects {
+            background-color: #add8e6; /* Pastel Blue */
+            color: #333; /* Dark gray text */
+        }
+
+        .skills h2,
+        .professional-skills h2,
+        .certifications h2,
+        .summary h2,
+        .education h2,
+        .projects h2 {
+            margin: 0;
+        }
+
+        ul {
+            padding: 0;
+            list-style-type: none; /* Remove default list style */
+        }
+
+        .projects h3 {
+            margin: 0;
+        }
+
+        .project-image {
+            max-width: 100%; /* Adjust the maximum width as needed */
+            height: auto; /* This ensures the image maintains its aspect ratio */
+        }
+
+        .bi-image {
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slideshow-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .slideshow-image {
+            display: none;
+            width: 80%; /* Adjust the width of the current image */
+            transition: 0.5s;
+        }
+
+        .slideshow-image.middle {
+            width: 100%; /* Width of the current (middle) image */
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: 30px; /* Adjust the width to make arrows smaller */
+            height: 30px; /* Adjust the height to match width for square arrows */
+            padding: 5px; /* Adjust the padding for smaller arrows */
+            margin-top: -20px; /* Adjust the margin to center the arrows vertically */
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 50%; /* Make the arrows circular */
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1; /* Ensure arrows are above the images */
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Styling for the pastel white links */
+        .pastel-white-link {
+            color: #FF9999;
+            text-decoration: underline;
+        }
+
+        .pastel-white-link:hover {
+            color: #FFFF99;
+            text-decoration: underline;
+        }
+	.resume-link {
+            background-color: #ff5733; /* Red */
+            color: #F5F5F5; /* White text */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shivani's Portfolio</h1>
+    </header>
+    <div class="container">
+        <ul>
+            <li class="card profile-image-container">
+                <img class="profile-image" src="https://drive.google.com/uc?export=download&id=19G-BLKvt3-wjOZURKlLwupXblGxO7MdY" alt="Shivani's Profile Image">
+            </li>
+            <li class="card profile-details">
+                <h3>Name: Shivani
+
+                <p>Email: shivani44888@gmail.com</p>
+                <p><a class="pastel-white-link" href="https://www.hackerrank.com/shivani44888?badge=sql&stars=5&level=3&hr_r=1&utm_campaign=social-buttons&utm_medium=linkedin&utm_source=badge_share_profile&social=linkedin" target="_blank">5 ⭐ SQL HackerRank</a></p>
+                <p><a class="pastel-white-link" href="https://www.linkedin.com/in/shivani-072969212" target="_blank">LinkedIn Profile 🔗</a></p>
+                <p>Current Address: Marthanda Nagar, Hafeezpet, Hyderabad</p>
+                </h3>
+            </li>
+            <li class="card summary">
+                <h2>Summary</h2>
+                <p>Highly motivated and skilled fresher seeking a position at a company to apply my knowledge and expertise in SQL, Excel, Machine Learning, PowerBI, and Python. With a background in BCA from GLA University (2021) and MCA from VIT University (2023), I am eager to contribute to projects and leverage my adaptability, management skills, and ability to work well in a team.</p>
+            </li>
+            <li class="card education">
+                <h2>Education</h2>
+                <ul>
+                    <li><b>VIT University, Chennai</b></li>
+                    <li>Master of Computer Application 2021 – 2023</li>
+                    <li><b>GLA University, Mathura</b></li>
+                    <li>Bachelor of Computer Application 2018 – 2021</li>
+                </ul>
+            </li>
+            <li class="card skills">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>SQL</li>
+                    <li>Excel</li>
+                    <li>Python</li>
+                    <li>Microsoft PowerBI</li>
+                    <li>Core Concepts of Machine Learning</li>
+                    <li>Data Analysis and Visualization Using Python</li>
+                </ul>
+            </li>
+            <li class="card professional-skills">
+                <h2>Professional Skills</h2>
+                <ul>
+                    <li>Adaptability</li>
+                    <li>Communication Skills</li>
+                    <li>Team Player</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </li>
+            <li class="card certifications">
+                <h2><u>Certifications</u></h2>
+                <div class="slideshow-container">
+                    <img class="slideshow-image middle" src="https://drive.google.com/uc?export=download&id=1UUq3pYJBNC9EAG1K4t38srTgI-wklsCe" alt="Certification 1">
+                    <img class="slideshow-image" 
+src="https://drive.google.com/uc?export=download&id=1-ts6Hzd3CDmvmlTI-S2wQcqPslcgIUi_"
+ alt="Certification 2">
+                    <img class="slideshow-image" 
+src="https://drive.google.com/uc?export=download&id=1LN-lRYetg7uyKrmYVO6-G3Mi0dkrCdjw"
+ alt="Certification 3">
+
+                    <img class="slideshow-image" 
+src="https://drive.google.com/uc?export=download&id=1Uhc1OFwJtaMftTHI9t5GX531XGDQZchB"
+ alt="Certification 4">
+                    <img class="slideshow-image" 
+src="https://drive.google.com/uc?export=download&id=1kS81sHI8CwRMLLQLLR5nWrxKhLSkfXKC"
+alt="Certification 5">
+
+                    <a class="prev" onclick="changeCertSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeCertSlide(1)">&#10095;</a>
+                </div>
+            </li>
+            <li class="card projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3>Diabetes Prediction Using Machine And Deep Learning</h3>
+                    <p>Developed a diabetes prediction model using machine learning and deep learning techniques to predict diabetes.</p>
+                    <p>Preprocessed and analyzed the dataset. Built and trained a deep learning model using Python libraries.</p>
+                    <p>Achieved accuracy of 90%.</p>
+                    <img class="project-image" 
+src="https://drive.google.com/uc?export=download&id=1LkueWSpEz8fxxRMOhRlAbasZbxVTn30M"
+alt="Achievement Title">
+                </div>
+                <!-- Add more project items here as needed -->
+            </li>
+
+            <li class="card bi-image">
+                <h2 style="background-color: #FFFF99; color: #333;">Power BI Project Demo</h2>
+                <div class="slideshow-container">
+                    <img class="slideshow-image middle" 
+src="https://drive.google.com/uc?export=download&id=1DwEnllLyqwpaLkTX-CJ-0zXN8X5-wR3O"
+alt="Power BI Project Demo 1">
+                    <img class="slideshow-image" 
+src="https://drive.google.com/uc?export=download&id=1lwnz55AaZ5Llg_0ArYsRczMKcQzoFfvy"
+alt="Power BI Project Demo 2">
+                    <img class="slideshow-image" 
+src="https://drive.google.com/uc?export=download&id=16EzFtR_Py5L6tpKgC0sYUlsoqdhBnDUv"
+ alt="Power BI Project Demo 3">
+                    <a class="prev" onclick="changeBiSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeBiSlide(1)">&#10095;</a>
+                </div>
+            </li>
+            <li class="card resume-link">
+                <h2>
+                <a href="https://drive.google.com/uc?export=download&id=1lXW5VZHSjIwhWVhxxfVaNtEvaMJTuOly" target="_blank">Download Resume</a></h2>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        let certSlideIndex = 0;
+        let biSlideIndex = 0;
+
+        showSlide(slideIndex);
+        showCertSlide(certSlideIndex);
+        showBiSlide(biSlideIndex);
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function changeCertSlide(n) {
+            showCertSlide(certSlideIndex += n);
+        }
+
+        function changeBiSlide(n) {
+            showBiSlide(biSlideIndex += n);
+        }
+
+        function showSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("slideshow-image");
+            if (n >= slides.length) {
+                slideIndex = 0;
+            }
+            if (n < 0) {
+                slideIndex = slides.length - 1;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+        }
+
+        function showCertSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("certifications")[0].getElementsByClassName("slideshow-image");
+            if (n >= slides.length) {
+                certSlideIndex = 0;
+            }
+            if (n < 0) {
+                certSlideIndex = slides.length - 1;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[certSlideIndex].style.display = "block";
+        }
+
+        function showBiSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("bi-image")[0].getElementsByClassName("slideshow-image");
+            if (n >= slides.length) {
+                biSlideIndex = 0;
+            }
+            if (n < 0) {
+                biSlideIndex = slides.length - 1;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[biSlideIndex].style.display = "block";
+        }
+    </script>
+</body>
+</html>
